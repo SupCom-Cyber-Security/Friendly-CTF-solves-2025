@@ -29,7 +29,7 @@ A huge **thank you** to all the challenge authors, solvers, and organizers who m
 
 Each folder contains:
 - The **challenge files**
-- The **writeup** (either a solution.txt or a solution.py  file)
+- The **writeup** (either a solution.txt , a solution.py  or a writeup.md file)
 
 Feel free to explore and learn
 
