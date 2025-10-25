@@ -1,0 +1,9 @@
+
+Naruto discovered a secret scroll hidden deep in the Hokage Library of KONOHA. The scroll contains forbidden jutsu techniques, but the text is encrypted! Only those skilled in cryptography can reveal the secrets and help Naruto master the hidden jutsu.
+
+Can you help Naruto decipher the scroll?
+
+Hint: The scroll uses a classic cipher, and the key is hidden in plain sight… pay attention to the names in the village!
+
+
+

@@ -1,0 +1,9 @@
+just use strings to extract the strings that exists in the binary file
+
+usage : strings main
+
+you will see : SC2{5tr1ng5_Qu1rk_1nl0ck3d} in the output
+
+for additional precision: 
+
+usage strings main | grep SC2{

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Battle - Choose Your Titan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-image: url('/paradise.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #e0e1dd;
+            min-height: 100vh;
+        }
+        .container {
+            background: rgba(27, 38, 59, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            border: 2px solid #415a77;
+            backdrop-filter: blur(5px);
+        }
+        h1 {
+            color: #e0e1dd;
+            text-align: center;
+            text-shadow: 0 0 10px #ff6b6b;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #a9b6c9;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .titans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .titan-option {
+            text-align: center;
+            cursor: pointer;
+            padding: 20px;
+            border: 2px solid #415a77;
+            border-radius: 10px;
+            transition: all 0.3s;
+            background: #2a3c5a;
+        }
+        .titan-option:hover {
+            border-color: #ff6b6b;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+        }
+        .titan-option.selected {
+            border-color: #ff6b6b;
+            background: #3a4c6a;
+            transform: translateY(-2px);
+        }
+        .titan-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #415a77;
+            margin-bottom: 15px;
+        }
+        .titan-option h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #e0e1dd;
+        }
+        .titan-option p {
+            color: #a9b6c9;
+            font-size: 14px;
+            margin: 0;
+        }
+        form {
+            display: none;
+        }
+        button {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin: 30px auto;
+            transition: all 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+        button:disabled {
+            background: #415a77;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚔️ TITAN BATTLE ARENA ⚔️</h1>
+        <div class="subtitle">Choose your Titan to enter the battle for Paradis!</div>
+        
+        <div class="titans">
+            <div class="titan-option" data-titan="Attack Titan">
+                <img src="/Attack Titan.jpg" alt="Attack Titan" class="titan-image">
+                <h3>Attack Titan</h3>
+                <p>Seeks freedom above all</p>
+            </div>
+            <div class="titan-option" data-titan="Colossus Titan">
+                <img src="/Colossus Titan.png" alt="Colossus Titan" class="titan-image">
+                <h3>Colossus Titan</h3>
+                <p>Massive and destructive</p>
+            </div>
+            <div class="titan-option" data-titan="Armored Titan">
+                <img src="/Armored Titan.jpg" alt="Armored Titan" class="titan-image">
+                <h3>Armored Titan</h3>
+                <p>Heavily armored defense</p>
+            </div>
+            <div class="titan-option" data-titan="Female Titan">
+                <img src="/Female Titan.jpg" alt="Female Titan" class="titan-image">
+                <h3>Female Titan</h3>
+                <p>Adaptive and versatile</p>
+            </div>
+            <div class="titan-option" data-titan="Beast Titan">
+                <img src="/Beast Titan.jpg" alt="Beast Titan" class="titan-image">
+                <h3>Beast Titan</h3>
+                <p>Primal strength and range</p>
+            </div>
+            <div class="titan-option" data-titan="Jaw Titan">
+                <img src="/Jaw Titan.webp" alt="Jaw Titan" class="titan-image">
+                <h3>Jaw Titan</h3>
+                <p>Speed and sharp claws</p>
+            </div>
+            <div class="titan-option" data-titan="Cart Titan">
+                <img src="/Cart Titan.jpg" alt="Cart Titan" class="titan-image">
+                <h3>Cart Titan</h3>
+                <p>Endurance and utility</p>
+            </div>
+            <div class="titan-option" data-titan="War Hammer Titan">
+                <img src="/War Hammer Titan.webp" alt="War Hammer Titan" class="titan-image">
+                <h3>War Hammer Titan</h3>
+                <p>Weapon creation mastery</p>
+            </div>
+        </div>
+
+        <form id="titanForm" method="POST" action="/select">
+            <input type="hidden" name="titan" id="selectedTitan">
+        </form>
+
+        <button id="startButton" disabled>Enter Battle</button>
+    </div>
+
+    <script>
+        let selectedTitan = null;
+        
+        // Add click event listeners to titan options
+        document.querySelectorAll('.titan-option').forEach(option => {
+            option.addEventListener('click', function() {
+                selectedTitan = this.getAttribute('data-titan');
+                
+                // Remove selected class from all options
+                document.querySelectorAll('.titan-option').forEach(opt => {
+                    opt.classList.remove('selected');
+                });
+                
+                // Add selected class to clicked option
+                this.classList.add('selected');
+                
+                // Enable the start button
+                document.getElementById('startButton').disabled = false;
+            });
+        });
+        
+        // Start button event listener
+        document.getElementById('startButton').addEventListener('click', function() {
+            if (!selectedTitan) {
+                alert('Please select a Titan first!');
+                return;
+            }
+            document.getElementById('selectedTitan').value = selectedTitan;
+            document.getElementById('titanForm').submit();
+        });
+    </script>
+</body>
+</html>

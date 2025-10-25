@@ -1,0 +1,9 @@
+Author: MedYess
+Despite obtaining Big Mom's Poneglyph clue, the decoded location didn't directly reveal the place's name
+Luffy, growing impatient, decided to seek outside help.
+“If the island won’t come to us, we’ll ask the whole world where it is!”
+That's why he created an account in the last challenge and since you read the post, I guess you can help him.
+The Straw Hats are counting on you — don’t let the future Pirate King down!
+
+Flag format: SC2{placename}
+(all lowercase, no spaces, no apostrophes)

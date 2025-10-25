@@ -1,0 +1,25 @@
+The encoded text uses two layers: first Base64, then ROT13.
+
+Extract the string from the story:
+
+d2g1NzFwM19qMTExX2NlM2k0MXk=
+
+
+
+
+Step 1: Base64 decode →
+
+wh571p3_j111_ce3i41y
+
+
+
+
+Step 2: Apply ROT13 →
+
+ju571c3_w111_pr3v41l
+
+
+
+Step 3: Format as CTF flag:
+
+SC2{ju571c3_w111_pr3v41l}

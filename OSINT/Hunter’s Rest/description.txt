@@ -1,0 +1,8 @@
+In the vast world of Hunters, few walk the path of Gon and Killua — always moving, always searching.
+One such Hunter pauses at a quiet spot, his license tucked away, his purpose unknown.
+Only those who think like a true Hunter can trace his trail.
+Hidden in plain sight lies what he sought — find it, and prove your worth.
+
+Flag format:
+SC2{buildingname_streetname}
+Example: if the building name is "Tour Eiffel" and the street name is "Champ de Mars", the flag will be: SC2{toureiffel_champdemars}

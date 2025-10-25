@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<header>
+    <h1>🔍 L's Investigation Notebook</h1>
+    <p>Kira Investigation Task Force - Evidence Archive</p>
+</header>
+
+<div class="content">
+    <h2>Available Investigation Notes (ID 1-10):</h2>
+    
+    <div class="notes-grid">
+        {% for i in range(1, 11) %}
+        <div class="note-card">
+            <h3>Note #{{ i }}</h3>
+            <p>Click to view investigation note {{ i }}</p>
+            <a href="/notes?id={{ i }}" class="note-link">View Note {{ i }}</a>
+        </div>
+        {% endfor %}
+    </div>
+
+
+</div>
+{% endblock %}

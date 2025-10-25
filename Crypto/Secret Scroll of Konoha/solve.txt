@@ -1,0 +1,12 @@
+Cipher type: Caesar cipher (a type of substitution cipher)
+
+Method: Shift each letter backward by the key (here, key = 6 lenth of the village name )
+
+Non-letter characters: Left unchanged
+
+Wrap the decrypted text you_are_crypto_master in the CTF format to get the flag: 
+
+
+YI2{e0a_4x3_ixev70_s4y73x}
+
+SC2{y0u_4r3_cryp70_m4s73r}

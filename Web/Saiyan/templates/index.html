@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament of Power Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ Tournament of Power Registration ⚡</h1>
+            <p>Prove your worth to join Universe 7's team!</p>
+        </header>
+
+        <div class="scouter-interface">
+            <div class="scouter-display">
+                <div class="scouter-screen">
+                    <h2>Scouter Analysis</h2>
+                    <p class="warning">⚠️ POWER LEVEL VERIFICATION REQUIRED ⚠️</p>
+                    <p>Minimum Power Level: <strong class="required">OVER 9000!</strong></p>
+                </div>
+            </div>
+
+            <form id="registrationForm" method="POST" action="/register" class="registration-form">
+                <div class="form-group">
+                    <label for="name">Fighter Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name" value="Goku">
+                </div>
+
+                <div class="form-group">
+                    <label for="power_level">Power Level:</label>
+                    <input type="number" id="power_level" name="power_level" 
+                           min="1" max="9000" value="5000" required
+                           placeholder="Enter your power level">
+                    <small class="hint">Client-side restriction: Maximum 9000</small>
+                </div>
+
+                <button type="submit" class="submit-btn">Analyze Power Level</button>
+            </form>
+
+            <div class="challenge-info">
+                <h3>💡 Challenge: Client-Side Validation Bypass</h3>
+                <p><strong>Story:</strong> Vegeta's scouter has a client-side limit of 9000, but the server requires OVER 9000!</p>
+                <p><strong>Objective:</strong> Bypass the client-side restriction using Burp Suite.</p>
+                
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple client-side restriction
+        document.getElementById('power_level').addEventListener('input', function(e) {
+            const value = parseInt(e.target.value) || 0;
+            if (value > 9000) {
+                alert('Client-side restriction: Maximum power level is 9000!');
+                e.target.value = 9000;
+            }
+        });
+
+        // Prevent form submission if over 9000 (can be bypassed via Burp)
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            const powerLevel = parseInt(document.getElementById('power_level').value);
+            if (powerLevel > 9000) {
+                alert('Power level exceeds client-side limits! Use Burp Suite to bypass this.');
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>

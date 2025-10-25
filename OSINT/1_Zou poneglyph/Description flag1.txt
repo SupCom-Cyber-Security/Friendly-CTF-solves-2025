@@ -1,0 +1,26 @@
+Author: MedYess
+🏴‍☠️ The Road to the One Piece
+
+The seas are filled with whispers of treasure.
+The Straw Hat Pirates are closer than ever to the legendary One Piece.
+But the path is hidden — only the Four Road Poneglyphs can reveal the locations that lead to the final island.
+
+After countless battles and storms, the crew reaches the first Road Poneglyph — hidden deep within the giant elephant island, Zou.
+
+Ancient inscriptions shimmer under the sunlight.
+They do not reveal a treasure…
+They do not reveal coordinates…
+They reveal a name.
+
+A name of a distant land.
+A place where secrets wait…
+A place where adventurers must go to continue the quest.
+Robin decrypts the poneglyph and realize that it is pointing to the location of the CTF.
+
+The Straw Hats now know: the next clue to the One Piece lies at this location.
+And so does your first challenge.
+Flag format: SC2{placename} 
+all lowercase
+no spaces
+no apostrophes
+THIS IS ONE IS VERY HARD!!! HAHAH!! HARD LUCK!!

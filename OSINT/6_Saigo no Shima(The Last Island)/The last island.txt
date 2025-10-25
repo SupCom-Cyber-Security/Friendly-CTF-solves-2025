@@ -1,0 +1,18 @@
+4 Road Poneglyphs have been deciphered.
+Their coordinates are set — but the fourth and final location remains shrouded in mystery.
+
+An old logbook from Gol D. Roger’s ship contains a cryptic note:
+“769 21:30 — the last laugh is for the dawn.”
+
+No one in the crew understands its meaning.
+Is it a date? A coordinate? A map reference?
+
+Can you find out what to do with the four locations based on Roger's message. 
+
+The final island’s name is hidden behind this secret.
+Solve it, and the One Piece will be yours.
+
+Flag format: SC2{islandname}
+(all lowercase, no spaces, no apostrophes)
+
+The Great Pirate Era awaits its conclusion…

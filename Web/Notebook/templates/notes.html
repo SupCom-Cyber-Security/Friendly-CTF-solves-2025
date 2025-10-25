@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}Note #{{ note.id }} - L's Notebook{% endblock %}
+
+{% block content %}
+<header>
+    <h1>🔍 Investigation Note #{{ note.id }}</h1>
+    <a href="/" class="back-link">← Back to All Notes</a>
+</header>
+
+<div class="note-content">
+    <div class="note-meta">
+        <p><strong>Author:</strong> {{ note.username }}</p>
+        <p><strong>Title:</strong> {{ note.title }}</p>
+        <p><strong>Note ID:</strong> {{ note.id }}</p>
+    </div>
+    
+    <div class="note-text">
+        <pre>{{ note.content }}</pre>
+    </div>
+    
+    {% if note.id == 0 %}
+    <div class="flag-container">
+        <div class="flag">
+            <h3>🎉 CASE SOLVED! 🎉</h3>
+            <p>You found L's secret conclusion! The investigation is complete.</p>
+            <div class="flag-code">{{ note.content.split('FLAG: ')[1] }}</div>
+            <p><strong>Vulnerability Exploited:</strong> IDOR (Insecure Direct Object Reference)</p>
+        </div>
+    </div>
+    {% endif %}
+
+    
+</div>
+{% endblock %}

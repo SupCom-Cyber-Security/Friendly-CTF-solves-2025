@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎉 REGISTRATION SUCCESSFUL! 🎉</h1>
+            <p>Welcome to the Tournament of Power!</p>
+        </header>
+
+        <div class="success-message">
+            <div class="scouter-result">
+                <div class="scouter-screen success">
+                    <h2>POWER LEVEL ANALYSIS COMPLETE</h2>
+                    <p class="fighter-name">Fighter: <strong>{{ name }}</strong></p>
+                    <p class="power-level">Power Level: <strong class="over-9000">{{ power_level }}</strong></p>
+                    <p class="verification">✅ VERIFIED: POWER LEVEL OVER 9000!</p>
+                    <p class="security-bypass">🔓 CLIENT-SIDE VALIDATION BYPASSED VIA BURP SUITE</p>
+                </div>
+            </div>
+
+            <div class="flag-container">
+                <div class="flag">
+                    <h3>⚡ CHALLENGE COMPLETED! ⚡</h3>
+                    <p>You successfully intercepted and modified the request using Burp Suite!</p>
+                    <div class="flag-code">{{ flag }}</div>
+                </div>
+            </div>
+
+            <div class="celebration">
+                <p>Vegeta: "Hmph... not bad. You actually know how to use proper tools."</p>
+                <p>Whis: "Excellent work! You've demonstrated real penetration testing skills!"</p>
+            </div>
+
+            <a href="/" class="back-link">← Register Another Fighter</a>
+        </div>
+    </div>
+</body>
+</html>

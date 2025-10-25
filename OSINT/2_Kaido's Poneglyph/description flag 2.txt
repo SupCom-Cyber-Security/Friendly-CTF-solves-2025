@@ -1,0 +1,18 @@
+Author: MedYess
+With the first clue deciphered at Zou, the Straw Hats set sail toward the next Road Poneglyph — guarded by the formidable Kaido, the "Strongest Creature in the World."
+
+After the epic battle in the skies of Onigashima, Kaido’s Poneglyph was finally within reach.
+But unlike Zou, this stone did not reveal its secret easily.
+It was encrypted not in the ancient tongue, but in a modern cipher: a string of numbers.
+
+Nami discovered the clue:
+820308416509497 — a Facebook reel ID.
+
+Hidden within that fleeting video lies the name of the next destination.
+A place tied to Kaido’s past, or perhaps his ambitions…
+A place you must find to move closer to Laugh Tale.
+
+Robin warns: “This one is heavily guarded by Kaido’s encrypted legacy. Only the sharpest will unveil the truth.”
+
+Flag format: SC2{placename}
+(all lowercase, no spaces, no apostrophes)

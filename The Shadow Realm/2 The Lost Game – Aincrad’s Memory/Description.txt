@@ -1,0 +1,3 @@
+A game has been locked away in the digital realm, much like the trapped players of Sword Art Online. Using the username you discovered, trace where the game has been uploaded. Within its world lies your next clue.
+find and download the game(windows version) ( You'll need it later )
+ps: the game is only executable on windows or you can use wine (on linux)

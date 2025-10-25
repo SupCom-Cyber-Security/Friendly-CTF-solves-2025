@@ -1,0 +1,3 @@
+Just like how every ninja hides behind a mask, the first step is to uncover the true identity of your opponent. Find the username lurking in the shadows—only then will the next mission reveal itself.
+
+flag format : SC2{username}

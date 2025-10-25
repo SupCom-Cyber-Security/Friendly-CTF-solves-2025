@@ -1,0 +1,9 @@
+insta post caption poster of the mini ctf anime themed : U0MyezUzNWszcl93MTExX2YxbmR9
+
+encrypted format of the flag SC2{535k3r5_w111_f1nd}
+bases64
+ :U0MyezUzNWszcl93MTExX2YxbmR9
+
+
+
+

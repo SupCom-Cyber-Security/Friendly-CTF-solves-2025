@@ -1,0 +1,7 @@
+solve 
+
+
+decrypt morse code using online sites or by hand 
+(https://morsecode.world/international/decoder/audio-decoder-adaptive.html)
+flag :
+SC2{I LOVE SC2}

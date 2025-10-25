@@ -1,0 +1,3 @@
+In this challenge , i have a file.wav and i convert the wave to samples (echantillonage) these samples can be stored in 8-bits or 16-bit ...
+so i convert my flag to bits and every bit of my flag i made it in the least significant bit (We are talking about LSB another time) of the each sample
+So as a solver , you should convert that wave to samples and get the LSB of every sample and concatenate them and then convert that binary sequence to string and that string will contain the flag !

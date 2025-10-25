@@ -1,0 +1,2 @@
+In this challenge , first i have base64 encoded the flag and then i made internet packets with DNS protocol , where every packet's len is the ascii code of every caracter of the flag base64 encoded .
+So as a solver you must filter first to get the packets with dns protocol and then you convert the len of every frame in its ascii code caracter and combine these caracters you will have a string you must base64-decode it and CONGTRATULATIONS , you got the flag !

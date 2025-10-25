@@ -1,0 +1,10 @@
+Author: MedYess
+The fourth Road Poneglyph was never found. Rumors speak of an unknown force that hid it long before the Great Era of Pirates began. Yet, on Egghead Island, Luffy stumbled upon traces of decrypted data—fragments hinting at the location of the final stone.
+Two corrupted messages were recovered:
+1st message: 
+b~~zy0%%nxc|o$meemfo$ieg%nxc|o%lefnoxy%;R}<sC@}9P8\|_s~:KL]?R'iB[KIE=B285yz7ybkxcdm
+2nd message:
+zz~4!!|gx iaibkÂmacÃhgb!j!ÝDZ@:`XÝaQ;ÞIzl¾hz~WVYÞGag®KOaµ!xgy1{~3}o|gi
+It is believed the first message is encrypted, and the key needed to unlock it is the name of the last island previously discovered by the seeker.
+flag format: SC2{islandname}
+(all lowercase)

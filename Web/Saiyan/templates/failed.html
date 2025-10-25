@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Failed</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>❌ REGISTRATION FAILED ❌</h1>
+            <p>Power Level Insufficient</p>
+        </header>
+
+        <div class="failed-message">
+            <div class="scouter-result">
+                <div class="scouter-screen failed">
+                    <h2>POWER LEVEL ANALYSIS FAILED</h2>
+                    <p class="fighter-name">Fighter: <strong>{{ name }}</strong></p>
+                    <p class="power-level">Power Level: <strong class="under-9000">{{ power_level }}</strong></p>
+                    <p class="required">Required: <strong>OVER 9000!</strong></p>
+                    <p class="error">🚫 INSUFFICIENT POWER LEVEL!</p>
+                </div>
+            </div>
+
+            <div class="vegeta-quote">
+                <p>Vegeta: "PATHETIC! Your power level is only {{ power_level }}! Come back when you're stronger!"</p>
+                <p>"IT'S OVER 9000!!! OR NOTHING!"</p>
+            </div>
+
+            <div class="hint">
+                <h3>💡 Hint:</h3>
+                <p>The client-side JavaScript limited your power level to 9000.</p>
+                <p><strong>Use Burp Suite to intercept the request and change the power_level parameter!</strong></p>
+            </div>
+
+            <a href="/" class="back-link">← Try Again</a>
+        </div>
+    </div>
+</body>
+</html>

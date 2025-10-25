@@ -1,0 +1,7 @@
+A mysterious hacker has left a message hidden in a short audio clip . The audio consists of a sequence of beeps that seem random at first, but a closer look reveals a pattern.
+
+Your first task is to identify the encoding method used in the audio. Once you recognize it, you will need to decode the message to find the secret phrase.
+  
+
+hint :   .   - 
+

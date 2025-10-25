@@ -1,0 +1,41 @@
+/* Anime-themed styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at 10% 10%, #ffe6f0, #fff6f0 35%, #e8f7ff 100%);
+  background-attachment: fixed;
+  color: #2b2b2b;
+  margin: 0;
+  padding: 0;
+}
+
+.scene {
+  background: url('/static/img/sakura_silhouette.png') no-repeat right bottom;
+  background-size: 40%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 520px;
+  margin: 40px;
+  padding: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,250,255,0.85));
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(34,34,60,0.12);
+  border: 1px solid rgba(255,200,230,0.4);
+  text-align: center;
+}
+
+h1 { font-size: 28px; margin: 4px 0 14px 0; color: #4b2b8d; text-shadow: 0 1px 0 rgba(255,255,255,0.6); }
+
+label { display:block; text-align:left; margin:8px 0 4px 0; font-weight:600; }
+input[type=text], input[type=password] { width: 100%; padding: 10px; margin:6px 0 12px 0; box-sizing: border-box; border-radius:8px; border:1px solid #e3cbe8; }
+input[type=submit] { padding: 10px 16px; border-radius:10px; border: none; cursor:pointer; background: linear-gradient(90deg, #ff6bb7, #7a5cff); color:white; font-weight:700; }
+
+.hint { font-size: 13px; color: #6b6b6b; margin-top:12px; }
+.footer { font-size:12px; color:#7a7a7a; margin-top:18px; }
+.logo { margin-bottom: 12px; }
+.sakura { opacity: 0.85; }
+@media (max-width:600px){ .card{ margin:20px; padding:18px;} }

@@ -1,0 +1,5 @@
+Author: MedYess
+Luffy, in search of guidance to locate the next Road Poneglyph, secretly creates an account under the username kaizaku_wo. He asks for help without letting other pirates discover his trail, leaving hints only for those clever enough to find his hidden posts. Can you figure out which platform he used?
+flag format: SC2{platform_hashtag}
+example: SC2{facebook_#I_Will_Become_the_King_Of_Pirates}
+	

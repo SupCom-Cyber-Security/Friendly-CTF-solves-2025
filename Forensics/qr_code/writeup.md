@@ -1,0 +1,2 @@
+I xored the qrcode image with another image i have displayed (R=255 , G=255 , B=125) so you can't scan the qrcode only if you xor the same image with that mask another time , we know that xor behave like (-1) puiss n ;
+so then you get the qrcode ready for scanning , when you scan it , you get a file.wav you should navigate to the spectogramme of the wave and you will see the flag CONGRATULATIONS!!!

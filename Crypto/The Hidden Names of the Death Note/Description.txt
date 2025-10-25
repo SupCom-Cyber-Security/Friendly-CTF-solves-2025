@@ -1,0 +1,9 @@
+Light Yagami discovered that the Death Note contains more than just the names of criminals—it holds a secret code that only the cleverest minds can uncover. To protect this hidden knowledge, the notebook uses multiple layers of encoding. Only those who understand modern and classical cryptography can reveal the true phrase.
+
+Hints:
+
+
+The key to unlocking it is hidden in the story: careful observation reveals the method.
+
+
+
