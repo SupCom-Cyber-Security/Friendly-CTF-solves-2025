@@ -1,0 +1,8 @@
+Use zsteg to inspect the image for hidden information:
+
+Look for embedded text or binary data in the least significant bits of pixels.
+
+Identify the flag: 
+
+
+SC2{r3d_l1ly_fl0w3r} 

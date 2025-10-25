@@ -1,0 +1,1 @@
+After exporting the HTTP objects from the PCAP file, run strings on photo1.png — you’ll notice a hidden reference to an embedded file. Extract it to reveal a password.txt containing the password. Use this password to unzip the page.zip file, and inside you’ll find the final flag.
