@@ -1,0 +1,20 @@
+Vulnerability:
+The application contains an Insecure Direct Object Reference (IDOR) vulnerability. The URL parameter id directly controls which note is displayed, without proper access control checks.
+
+Vulnerability Analysis :
+Buttons on the page link to ?id=1 through ?id=9 (regular notes)
+
+The application doesn't verify if users should have access to the requested note ID
+
+Note ID 0 contains the flag but has no associated button
+
+Exploitation :
+Since there's no access control on note IDs, we can directly access any note by modifying the URL parameter.
+
+Steps to solve:
+
+Observe the URL pattern when clicking any note button ( http://IP.ADDRESS/notes?id=5)
+
+Manually change the URL parameter to ?id=0
+
+View the hidden note containing the flag
