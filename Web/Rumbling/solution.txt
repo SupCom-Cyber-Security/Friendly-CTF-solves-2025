@@ -1,0 +1,37 @@
+The Vulnerability :
+The website uses JWT tokens to track your chosen Titan. There's a security flaw in how it checks these tokens.
+
+The Security Hole:
+
+The server accepts tokens with "none" algorithm
+
+"none" algorithm means no signature check
+
+This lets anyone create fake tokens with any data they want
+
+The Exploitation
+Step 1: Get a Normal Token
+Pick any Titan (like Attack Titan)
+
+Check your browser cookies for titanToken
+
+This token proves you chose that Titan
+
+Step 2: Create a Fake Token
+
+What to create:
+
+Header: {"alg":"none"}
+
+Payload: {"titan":"Founding Titan"}
+
+Signature: (leave empty)
+
+Step 3: Use the Fake Token
+Encode the header and payload (use jwt.io website)
+
+Replace your titanToken cookie with the new token
+
+Refresh the page
+
+Click "Engage in Battle!" to get the flag
