@@ -1,0 +1,24 @@
+Vulnerability :
+The admin password is constructed from multiple components, including a 100-digit random tail. However, bcrypt has a well-known limitation: it only processes the first 72 bytes of any input password. Characters beyond the 72nd position are completely ignored during hash verification.
+
+Key Insight :
+The known components of the admin password total exactly 71 characters:
+
+"admin-password" (14 chars)
+
+"uixx-twix-sezd111-azer123-78789id-5656" (38 chars)
+
+"5423-6865-7421-9853" (19 chars)
+
+This means the 72nd character is the first digit of the 100-digit random tail, which needs to be brute forced.
+
+Solution :
+Since only one character position matters (the 72nd), and it must be a digit (0-9), we can rapidly test all possibilities:
+
+Use the known 71-character prefix: admin-passworduixx-twix-sezd111-azer123-78789id-56565423-6865-7421-985
+
+Append each digit (0-9) as the 72nd character
+
+One of these 10 attempts will successfully authenticate
+
+The remaining 99 digits of the tail are irrelevant because bcrypt truncates them.
